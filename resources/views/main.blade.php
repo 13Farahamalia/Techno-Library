@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\nav.css">
-    <title>Navbar Example</title>
+    <title>Techno-Library</title>
 </head>
 <body>
   <header class="header">
@@ -15,24 +15,12 @@
                       </a>
                 </div>
            <div class="items">
-                <a href="beranda.php" class="nav-item"><img src="./asset/home.png">
-                 Sirkulasi  <div class="space">|  aaaaa    |</div>
-                </a>
-                <a href="daftarbuku.php" class="nav-item"><iconify-icon icon="fluent:library-24-filled" width="40px"></iconify-icon>
-                 Pemustaka  <div class="space">|  aaaaa    |</div>    
-                </a>
-                <a href="aktifitas.php" class="nav-item"><iconify-icon icon="iconamoon:history-bold" width="40px"></iconify-icon>
-                 Koleksi   <div class="space">|  aaaaa    |</div>
-                </a>
-                <a href="beranda.php" class="nav-item"><img src="./asset/home.png">
-                  Beranda  <div class="space">|  aaaaa    |</div>
-                </a>
-                <a href="daftarbuku.php" class="nav-item"><iconify-icon icon="fluent:library-24-filled" width="40px"></iconify-icon>
-                 Daftar Buku  <div class="space">|  aaaaa    |</div>    
-                </a>
-                <a href="aktifitas.php" class="nav-item"><iconify-icon icon="iconamoon:history-bold" width="40px"></iconify-icon>
-                 Aktifitas   <div class="space">|  aaaaa    |</div>
-                </a>
+                <a href="beranda.php" class="nav-item"><img src="./asset/home.png"> Sirkulasi</a>
+                <a href="daftarbuku.php" class="nav-item"><iconify-icon icon="fluent:library-24-filled" width="40px"></iconify-icon> Pemustaka</a>
+                <a href="aktifitas.php" class="nav-item"><iconify-icon icon="iconamoon:history-bold" width="40px"></iconify-icon> Koleksi</a>
+                <a href="beranda.php" class="nav-item"><img src="./asset/home.png"> Beranda</a>
+                <a href="daftarbuku.php" class="nav-item"><iconify-icon icon="fluent:library-24-filled" width="40px"></iconify-icon> Daftar Buku</a>
+                <a href="aktifitas.php" class="nav-item"><iconify-icon icon="iconamoon:history-bold" width="40px"></iconify-icon> Aktifitas</a>
             </div>
         </nav>
     </header>
