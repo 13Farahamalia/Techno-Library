@@ -27,7 +27,7 @@ class LoginController extends Controller
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
             if (Auth::user()->status == 'Pustakawan'){
-                return to_route('pustakawan')->with('success', 'Berhasil Masuk');
+                return to_route('sirkulasi')->with('success', 'Berhasil Masuk');
             } else {
             return to_route('beranda')->with('success', 'Berhasil Masuk');
             }

@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class LibrarianController extends Controller
 {
     public function index(){
-        return 'Pustakawan';
+        return view('main');
     }
 }

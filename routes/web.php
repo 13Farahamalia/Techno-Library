@@ -24,7 +24,7 @@ Route::post('/login', [LoginController::class, 'loginPost'])->name('login');
 
 Route::middleware(['auth', 'status:Pustakawan'])->group(function () {
     Route::resource('students', StudentsController::class);
-    Route::get('/pustakawan', [LibrarianController::class, 'index'])->name('pustakawan');
+    Route::get('/pustakawan', [LibrarianController::class, 'index'])->name('sirkulasi');
 });
 
 Route::get('/pemustaka', [UsersController::class, 'index'])->name('beranda');
