@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+:root{
+    --primer: #F1F3FF;
+    --sekunder: #3e53af;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background: var(--sekunder);
+    width: 96.5vw;
+    padding: 1vw;
+    color: var(--primer); 
+    margin: -20px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    display: flex;
+    color: var(--primer);
+    align-items: center;
+    justify-content: center;
+}

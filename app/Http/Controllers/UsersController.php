@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     public function index() {
-        return 'Halo';
+        return view('pemustaka.beranda');
     }
 }
