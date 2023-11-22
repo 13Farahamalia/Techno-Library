@@ -13,28 +13,26 @@
 <body>
   <header class="header">
     <nav class="navbar">
-        <div class="user la">
-            <a href="profil.php">
-              <iconify-icon icon="ph:user-circle-fill" width="60px" style=""></iconify-icon>
-            </a>
-        </div>
-       <div class="items la">
-                <a href="" class="nav-item"><img src="{{ asset('image/icon-sirkulasi.png') }}">
-                Sirkulasi </a>
-                <a href="" class="nav-item"><img src="{{ asset('image/icon-daftar-buku.png') }}">
-                Daftar Buku </a>
-                <a href="daftarbuku.php" class="nav-item"><img src="{{ asset('image/icon-pemustaka.png') }}">
-                Pemustaka </a>
-                <a href="aktifitas.php" class="nav-item"><img src="{{ asset('image/icon-koleksi.png') }}">
-                Koleksi </a>           
-        </div>
-        <div class="access la">
-            @if ( Auth::check() )
-            <a href="{{ route('logout') }}">Keluar</a>
-            @else
-            <a href="{{ route('login') }}">Masuk</a>
-            @endif
-        </div>
+          <div class="user la">
+                <a href="profil.php">
+                  <iconify-icon icon="ph:user-circle-fill" width="60px" style=""></iconify-icon>
+                </a>
+            </div>
+           <div class="items la">
+                    <a href="{{ route('beranda') }}" class="nav-item {{ request()->routeIs('beranda') ? 'active' : '' }}"><img src="{{ asset('image/icon-beranda.png') }}">
+                    Beranda </a>
+                    <a href="{{ route('daftar.buku') }}" class="nav-item {{ request()->routeIs('daftar.buku') ? 'active' : '' }}"><img src="{{ asset('image/icon-daftar-buku.png') }}">
+                    Daftar Buku </a>
+                    <a href="aktifitas.php" class="nav-item" {{ request()->routeIs('aktifitas') ? 'active' : '' }}><img src="{{ asset('image/icon-aktifitas.png') }}">
+                    Aktifitas </a>           
+            </div>
+            <div class="access la">
+                @if ( Auth::check() )
+                <a href="{{ route('logout') }}">Keluar</a>
+                @else
+                <a href="{{ route('login') }}">Masuk</a>
+                @endif
+            </div>
         </nav>
     </header>
     <div class="mt-2">

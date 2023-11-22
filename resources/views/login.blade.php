@@ -17,7 +17,7 @@
                 <h1>Selamat Datang 
                     di Perpustakaan Kanesa</h1>
                 <div class="input">
-                <input id="name" type="text" class=" form-control @error('name') is-invalid @enderror" name="name" placeholder="Nama Lengkap" autocomplete="name" autofocus>
+                <input id="name" type="text" class=" form-control @error('name') is-invalid @enderror" name="name" placeholder="Nama Lengkap" autocomplete="name" autofocus required>
                 @error('name')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -25,7 +25,7 @@
                 @enderror
                 </div>
                 <div class="input">
-                <input id="password" type="password" class=" form-control @error('password') is-invalid @enderror" name="password" placeholder="password" autocomplete="password" autofocus>
+                <input id="password" type="password" class=" form-control @error('password') is-invalid @enderror" name="password" placeholder="password" autocomplete="password" autofocus required>
                 @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>

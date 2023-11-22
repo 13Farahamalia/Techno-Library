@@ -1,4 +1,4 @@
-@extends('main')
+@extends('main-pemustaka')
 
 @section('content')
 <div class="container">
@@ -6,7 +6,7 @@
         <div class="left">
             <div class="title">
                 <h1>Selamat Datang</h1>
-                <h2>Di Perpustakaan Kanesa</h2>
+                <h2>Di Website Perpustakaan Kanesa</h2>
             </div>
             <div class="text">
                 <p> Perpustakaan sekolah merupakan salah satu sarana pelestarian bahan pustaka sebagai hasil budaya dan mempunyai <br>fungsi sebagai sumber informasi ilmu pengetahuan</p>

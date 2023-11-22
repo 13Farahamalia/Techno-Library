@@ -18,8 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LoginController::class, 'login'])->name('login');
-Route::post('/', [LoginController::class, 'loginPost'])->name('login');
+Route::get('/', [UsersController::class, 'index'])->name('beranda');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'loginPost'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
@@ -31,6 +30,7 @@ Route::middleware(['auth', 'status:Pustakawan'])->group(function () {
 
 Route::resource('books', ListBooksController::class);
 Route::get('/pemustaka', [UsersController::class, 'index'])->name('beranda');
+Route::get('/pemustaka', [UsersController::class, 'displaybook'])->name('daftar.buku');
 // Route::get('/students', [LoginController::class, 'index'])->name('students');
 // Route::get('/students/add', [LoginController::class, 'add'])->name('student.add');
 // Route::post('/students/add', [LoginController::class, 'store'])->name('student.store');
