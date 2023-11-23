@@ -1,14 +1,12 @@
 @extends('main')
 
 @section('content')
-<title>
-  <h1>Daftar Fitur</h1>
-</title>
-<div class="pilih">
+<div class="sirkulasi">
   <div class="colom">
       <div class="opsi">
         <div class="text">
           <h2>Peminjaman</h2>
+          <p>Semua data peminjaman tersimpan pada menu ini</p>
         </div>
         <a class="btn" href="peminjaman.php">
           Masuk
@@ -17,6 +15,7 @@
       <div class="opsi">
       <div class="text">
           <h2>Pengembalian</h2>
+          <p>Semua data pengembalian tersimpan pada menu ini</p>
         </div>
         <a class="btn" href="pengembalian.php">
           Masuk
@@ -25,6 +24,7 @@
       <div class="opsi">
       <div class="text">
           <h2>Pembayaran Denda</h2>
+          <p>Semua data yang harus dan sudah membayar denda tersimpan pada menu ini</p>
         </div>
         <a class="btn" href="bayardenda.php">
           Masuk

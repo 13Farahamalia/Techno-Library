@@ -1,21 +1,21 @@
 body{
     background: #F1F3FF;
 }
-.pilih{
-    padding: 150px;
+.sirkulasi{
     display: flex;
 }
-.opsi{
-    margin: 2vw;
+.sirkulasi .colom{
+    margin: -1vw 0;
+}
+.sirkulasi .opsi{
+    margin: 4vw 2vw;
     padding: 1px;
     background: #fff;
     border-radius: 10px;
     width: 400px;
     height: fit-content;
-    font-family: "Poppins", sans-serif ;
 }
-.btn{
-    font-family: "roboto", sans-serif ;
+.sirkulasi .btn{
     font-size: 15px;
     font-weight: bold;
     background: #685DBD;
@@ -33,26 +33,24 @@ body{
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
 }
-.btn:hover, .btn:focus, .btn:active{
+.sirkulasi .btn:hover, .btn:focus, .btn:active{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.text{
+.sirkulasi .text{
     padding-left: 10px;
-    font-family: "Poppins", sans-serif ;
-    margin: 5px;
+    margin: 1vw;
 }
-h3{
-    color: #727272;
-    padding-left: 10px;
-    font-family: "Poppins", sans-serif ;
-}
-.img{
+.sirkulasi .img{
     padding-left: 200px;
     width: 450px;
     height: 500px;
 }
-
-
-
-
+.sirkulasi .text h2{
+    font-size: 23px;
+    margin-bottom: -10px;
+}
+.sirkulasi .text p{
+    width: 380px;
+    font-size: 16px;
+}

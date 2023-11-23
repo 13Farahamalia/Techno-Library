@@ -1,0 +1,65 @@
+:root{
+    --primer: #fefeff;
+    --sekunder: #3e53af;
+    --ungu: #685DBD;
+    --biru: #3fc6f4;
+    --oren: #FCAB2D;
+    --ijo: #B9FF8E;
+}
+.daftarbuku .container p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 400px;
+}
+.daftarbuku .container .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.daftarbuku .container .wrapper .item{
+    background-color: var(--primer);
+    padding: 1.8vw 0;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.daftarbuku .container .wrapper .item .foto img{
+    width: 10vw;
+    margin: 0 20px;
+}
+.daftarbuku .container .wrapper .item .text{
+    width: 300px;
+}
+.daftarbuku .container .wrapper .item .text h4{
+    color: var(--oren);
+    margin: 4px;
+}
+.daftarbuku .container .wrapper .item .text p{
+    font-size: 14px;
+    margin: 0px;
+}
+.daftarbuku .container .wrapper .item .text p .keterangan{
+    font-size: 14px;
+}
+.daftarbuku .container .wrapper .item .text .aksi{
+    margin-top: 20px;
+    display: flex;
+}
+.daftarbuku .container .wrapper .item .text .aksi .button{
+    padding: 2px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px 0 10px 0;
+    color: black;
+    border: none;
+}
+.daftarbuku .container .wrapper .item .text .aksi .edit{
+    background-color: var(--ijo);
+    margin-right: 10px;
+}
+.daftarbuku .container .wrapper .item .text .aksi .delete{
+    background-color: rgb(229, 30, 30);
+    color: white;
+    padding: 7px 30px;
+}

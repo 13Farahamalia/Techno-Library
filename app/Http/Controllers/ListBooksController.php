@@ -4,13 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Books;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ListBooksController extends Controller
 {
     public function index()
     {
         $books = Books::latest()->get();
-        return view('daftarbuku', compact('books'));
+        if (Auth::user()->status == 'Pustakawan') {
+            return view('pustakawan.daftarbuku', compact('books'));
+        } else {
+            return view('pemustaka.daftarbuku', compact('books'));
+        }
     }
 
     

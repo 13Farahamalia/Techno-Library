@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sirkulasi.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/daftarbuku.css') }}">
     <title>Techno Library</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
             </a>
         </div>
        <div class="items la">
-                <a href="" class="nav-item"><img src="{{ asset('image/icon-sirkulasi.png') }}">
+                <a href="{{ route('pustakawan') }}" class="nav-item"><img src="{{ asset('image/icon-sirkulasi.png') }}">
                 Sirkulasi </a>
-                <a href="" class="nav-item"><img src="{{ asset('image/icon-daftar-buku.png') }}">
+                <a href="{{ route('books.index') }}" class="nav-item"><img src="{{ asset('image/icon-daftar-buku.png') }}">
                 Daftar Buku </a>
                 <a href="daftarbuku.php" class="nav-item"><img src="{{ asset('image/icon-pemustaka.png') }}">
                 Pemustaka </a>
