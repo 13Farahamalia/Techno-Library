@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Books;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class ListBooksController extends Controller
@@ -15,12 +12,6 @@ class ListBooksController extends Controller
     {
         $books = Books::latest()->get();
         return view('pustakawan.daftarbuku', compact('books'));
-    }
-
-    
-    public function create()
-    {
-        return view('pustakawan.book-add');
     }
 
     public function store(Request $request)
@@ -51,12 +42,17 @@ class ListBooksController extends Controller
             'foto' => 'required|mimes:png,jpg,jpeg'
         ]);
         if($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
-        User::whereId($id)->update($request->all());
+        Books::whereId($id)->update($request->all());
         return to_route('books.index');
     }
 
     public function destroy(string $id)
     {
-        //
+        $book = Books::find($id);
+        if(!$book) {
+            return to_route('books.index')->with('error', 'Data tidak ditemukan!');
+        }
+        $book->delete();
+        return to_route('books.index')->with('success', 'berhasil menghapus data');
     }
 }

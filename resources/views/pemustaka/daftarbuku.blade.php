@@ -8,7 +8,7 @@
             @foreach ($books as $book)
                 <div class="item">
                     <div class="foto">
-                        <img src="{{ asset('image/'.$book->foto) }}">
+                        <img src="{{ url('storage/'.$book->foto) }}">
                     </div>
                     <div class="text">
                         <h4>{{ $book->judul }}</h4>

@@ -17,7 +17,7 @@
 
     <nav class="navbar">
         <div class="user la">
-            <a href="profil.php">
+            <a href="">
               <iconify-icon icon="ph:user-circle-fill" width="60px" style=""></iconify-icon>
             </a>
         </div>

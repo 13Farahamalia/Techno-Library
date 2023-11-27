@@ -18,6 +18,7 @@
                         <p>Diupload pada: {{ $book->created_at }}</p>
                         <p>Penerbit: {{ $book->penerbit }}</p>
                         <p>Tanggal terbit: {{ $book->tanggalterbit }}</p>
+                        <p>Kode Eksemplar: {{ $book->kodeeksemplar }}</p>
                         <div class="aksi">
                             <a class="button edit" href="{{ route('books.edit', ['book' => $book->id]) }}">Edit</a>
                             <form method="POST" action="{{ route('books.destroy', ['book' => $book->id]) }}">
@@ -73,6 +74,10 @@
                     <div class="mb-3">
                         <label for="tanggalterbit">Tanggal Terbit</label>
                         <input type="date" name="tanggalterbit">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kodeeksemplar">Kode Eksemplar Buku</label>
+                        <input type="text" name="kodeeksemplar" placeholder="Kode eksemplar">
                     </div>
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>

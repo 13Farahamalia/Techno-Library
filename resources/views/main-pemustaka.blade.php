@@ -15,7 +15,7 @@
   <header class="header">
     <nav class="navbar">
           <div class="user la">
-                <a href="profil.php">
+                <a href="">
                   <iconify-icon icon="ph:user-circle-fill" width="60px" style=""></iconify-icon>
                 </a>
             </div>
@@ -32,10 +32,10 @@
                 <form action="{{ route('logout') }}" method="POST" role="search">
                     @csrf
                     @method('DELETE')
-                    <button class="btn" type="submit">Keluar</button>
+                    <button class="access" type="submit">Keluar</button>
                 </form>
                 @else
-                <a href="{{ route('login') }}">Masuk</a>
+                <a class="access" href="{{ route('login') }}">Masuk</a>
                 @endif
             </div>
         </nav>
