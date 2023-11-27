@@ -17,7 +17,7 @@ class LoginController extends Controller
             'name' => $request->name,
             'password' => $request->password
         ];
-        // dd($data);
+        // $data['name'] = strtoupper($data['name']);
         $user = User::where('name', $data['name'])->count();
 
         if($user == 0){

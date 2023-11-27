@@ -6,10 +6,20 @@
     --oren: #FCAB2D;
     --ijo: #B9FF8E;
 }
+.daftarbuku{
+    margin-top: 4%;
+}
+.daftarbuku .container{
+    width: 100%;
+}
 .daftarbuku .container p{
     font-size: 20px;
     font-weight: 500;
-    width: 400px;
+    width: 90%;
+}
+.daftarbuku .container .btn{
+    font-size: 14px;
+    margin-bottom: 2vw;
 }
 .daftarbuku .container .wrapper{
     display: flex;
@@ -28,7 +38,7 @@
     margin: 0 20px;
 }
 .daftarbuku .container .wrapper .item .text{
-    width: 300px;
+    width: 250px;
 }
 .daftarbuku .container .wrapper .item .text h4{
     color: var(--oren);
@@ -56,6 +66,7 @@
 }
 .daftarbuku .container .wrapper .item .text .aksi .edit{
     background-color: var(--ijo);
+    padding-top: 10px;
     margin-right: 10px;
 }
 .daftarbuku .container .wrapper .item .text .aksi .delete{

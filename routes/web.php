@@ -21,12 +21,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UsersController::class, 'index'])->name('beranda');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'loginPost'])->name('login');
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::delete('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::middleware(['auth', 'status:Pustakawan'])->group(function () {
+Route::group(['middleware' => ['auth', 'status: Pustakawan']], function(){
     Route::resource('students', StudentsController::class);
     Route::get('/pustakawan', [LibrarianController::class, 'index'])->name('pustakawan');
     Route::resource('daftar-buku', ListBooksController::class);
+    Route::get('/pustakawan/pemustaka', [LibrarianController::class, 'pemustaka'])->name('pemustaka');
 });
 
 Route::resource('books', ListBooksController::class);

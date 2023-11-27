@@ -12,6 +12,6 @@ class UsersController extends Controller
     }
     public function displaybook() {
         $books = Books::latest()->get();
-        return view('daftarbuku', compact('books'));
+        return view('pemustaka.daftarbuku', compact('books'));
     }
 }

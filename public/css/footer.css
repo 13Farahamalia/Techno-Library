@@ -9,7 +9,7 @@
 }
 footer{
     background: var(--sekunder);
-    width: 96.5vw;
+    width: 100%;
     padding: 1vw;
     color: var(--primer); 
     margin: -20px;

@@ -1,6 +1,7 @@
 body{
     background: #F1F3FF;
 }
+
 .sirkulasi{
     display: flex;
 }
@@ -29,6 +30,7 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+    width: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
@@ -42,15 +44,14 @@ body{
     margin: 1vw;
 }
 .sirkulasi .img{
-    padding-left: 200px;
-    width: 450px;
-    height: 500px;
+    padding-left: 100px;
+   
 }
 .sirkulasi .text h2{
     font-size: 23px;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
 }
 .sirkulasi .text p{
-    width: 380px;
+    width: 370px;
     font-size: 16px;
 }

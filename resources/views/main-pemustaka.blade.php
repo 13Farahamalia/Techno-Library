@@ -20,16 +20,20 @@
                 </a>
             </div>
            <div class="items la">
-                    <a href="{{ route('beranda') }}" class="nav-item {{ request()->routeIs('beranda') ? 'active' : '' }}"><img src="{{ asset('image/icon-beranda.png') }}">
+                    <a href="{{ route('beranda') }}" class="nav-item {{ request()->routeIs('beranda') ? 'aktif' : '' }}"><img src="{{ asset('image/icon-beranda.png') }}">
                     Beranda </a>
-                    <a href="{{ route('daftar.buku') }}" class="nav-item {{ request()->routeIs('daftar.buku') ? 'active' : '' }}"><img src="{{ asset('image/icon-daftar-buku.png') }}">
+                    <a href="{{ route('daftar.buku') }}" class="nav-item {{ request()->routeIs('daftar.buku') ? 'aktif' : '' }}"><img src="{{ asset('image/icon-daftar-buku.png') }}">
                     Daftar Buku </a>
-                    <a href="aktifitas.php" class="nav-item" {{ request()->routeIs('aktifitas') ? 'active' : '' }}><img src="{{ asset('image/icon-aktifitas.png') }}">
+                    <a href="aktifitas.php" class="nav-item" {{ request()->routeIs('aktifitas') ? 'aktif' : '' }}><img src="{{ asset('image/icon-aktifitas.png') }}">
                     Aktifitas </a>           
             </div>
             <div class="access la">
                 @if ( Auth::check() )
-                <a href="{{ route('logout') }}">Keluar</a>
+                <form action="{{ route('logout') }}" method="POST" role="search">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn" type="submit">Keluar</button>
+                </form>
                 @else
                 <a href="{{ route('login') }}">Masuk</a>
                 @endif

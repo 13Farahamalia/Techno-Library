@@ -1,0 +1,38 @@
+:root{
+    --primer: #fefeff;
+    --sekunder: #3e53af;
+    --ungu: #685DBD;
+    --biru: #3fc6f4;
+    --oren: #FCAB2D;
+    --ijo: #B9FF8E;
+}
+.pemustaka{
+    margin-top: 4%;
+}
+.pemustaka .button{
+    color: #fefeff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: var(--sekunder);
+    border-radius: 10px;
+}
+.pemustaka table{
+    margin: 20px 0;
+}
+.pemustaka .aksi{
+    display: flex;
+}
+.pemustaka .edit{
+    padding: 3px 20px;
+    background-color: var(--oren);
+    color: var(--primer);
+    text-decoration: none;
+    margin-right: 20px;
+}
+.pemustaka .hapus{
+    padding: 3px 20px;
+    background-color: #d3051a;
+    color: var(--primer);
+    text-decoration: none;
+    border: none;
+}

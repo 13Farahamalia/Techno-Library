@@ -28,7 +28,6 @@ class StudentsController extends Controller
             'status' => $request->status,
             'password' => Hash::make($request->nisn)
         ]);
-
         $user->students()->create([
             'nisn' => $request->nisn,
             'kelas' => $request->kelas,

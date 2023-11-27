@@ -7,7 +7,7 @@ header{
     z-index: 400;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     padding: 8px 100px;
     background: #E5F4F4;
     display: flex;
@@ -54,7 +54,7 @@ header{
     align-items: center;
     margin: 0 13px;
 }
-nav .access a{
+nav .access .btn{
     background-color: #685DBD;
     color: #E5F4F4;
     padding: 5px 25px;
@@ -66,5 +66,5 @@ nav .access a{
 .content{
     display: flex;
     justify-content: center;
-    margin: 7vw 10vw;
+    margin: 7vw 7vw;
 }

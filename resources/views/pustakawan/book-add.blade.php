@@ -7,16 +7,17 @@
     <title>Tambah Buku yang bisa dipinjam</title>
 </head>
 <body>
-    <form method="POST" action="{{ route('books.store') }}">
+    <form method="POST" action="{{ route('books.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="div">
             <label for="kategori">Kategori</label>
             <select name="kategori" required>
+                <option selected>-- Pilih --</option>
                 <option value="Jurusan TKJ">Jurusan TKJ</option>
                 <option value="Jurusan RPL">Jurusan RPL</option>
                 <option value="Jurusan TEI">Jurusan TEI</option>
                 <option value="Jurusan TBSM">Jurusan TBSM</option>
-                <option value="Jurusan TKRO">ROurusan TKJ</option>
+                <option value="Jurusan TKRO">Jurusan TKRO</option>
                 <option value="Novel">Novel</option>
             </select>
         </div>
@@ -45,6 +46,7 @@
             <label for="tanggalterbit">Tanggal Terbit</label>
             <input type="date" name="tanggalterbit">
         </div>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

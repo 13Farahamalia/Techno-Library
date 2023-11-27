@@ -10,7 +10,6 @@
             </div>
             <div class="text">
                 <p> Perpustakaan sekolah merupakan salah satu sarana pelestarian bahan pustaka sebagai hasil budaya dan mempunyai <br>fungsi sebagai sumber informasi ilmu pengetahuan</p>
-                <a href="" class="btn">Pinjam</a>
             </div>
         </div>
         <div class="foto">
