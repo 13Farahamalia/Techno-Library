@@ -8,7 +8,7 @@
           <h2>Peminjaman</h2>
           <p>Semua data peminjaman tersimpan pada menu ini</p>
         </div>
-        <a class="btn" href="">
+        <a class="btn" href="{{ route('peminjaman.index') }}">
           Masuk
         </a>
       </div>
@@ -17,7 +17,7 @@
           <h2>Pengembalian</h2>
           <p>Semua data pengembalian tersimpan pada menu ini</p>
         </div>
-        <a class="btn" href="">
+        <a class="btn" href="{{ route('pengembalian.index') }}">
           Masuk
         </a>
       </div>

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('pencipta');
             $table->string('penerbit');
             $table->date('tanggalterbit');
-            $table->string('kodeeksemplar');
+            $table->integer('stok')->default(0);
             $table->timestamps();
         });
     }

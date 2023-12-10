@@ -15,6 +15,7 @@
     padding: 8px 16px;
     background-color: var(--sekunder);
     border-radius: 10px;
+    border: none;
 }
 .pemustaka table{
     margin: 20px 0;

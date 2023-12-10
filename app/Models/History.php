@@ -5,21 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Books extends Model
+class History extends Model
 {
     use HasFactory;
-    protected $table = 'books';
+    protected $table = 'histories';
     protected $primaryKey = 'id';
     protected $guarded = [];
 
     public $incrementing = true;
     public $timestamps = true;
-
-    public function borrow() {
-        return $this->hasOne(Borrow::class);
+    
+    public function book() {
+        return $this->belongsTo(Books::class);
     }
-
-    public function history() {
-        return $this->hasOne(History::class);
+    
+    public function user() {
+        return $this->belongsTo(User::class);
     }
 }

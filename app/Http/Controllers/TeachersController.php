@@ -11,14 +11,14 @@ class TeachersController extends Controller
 {
     public function index()
     {
-        $teachers = Teacher::lates()->get();
-        return view('putakawan.teachers', compact('teachers'));
+        $teachers = Teacher::get()->all();
+        return view('pustakawan.teachers', compact('teachers'));
     }
     
     public function store(Request $request)
     {
         $user = User::create([
-            'name' => $request->name,
+            'name' => strtoupper($request->input('name')),
             'gender' => $request->gender,
             'status' => $request->status,
             'password' => Hash::make('$request->nip')
@@ -26,6 +26,7 @@ class TeachersController extends Controller
         $user->teachers()->create([
             'nip' => $request->nip
         ]);
+        return redirect()->route('teachers.index')->with('success', 'Data siswa telah berhasil disimpan.');
     }
 
     public function edit($id)
@@ -52,9 +53,7 @@ class TeachersController extends Controller
         ]);
 
         $teacher->update([
-            'nisn' => $request->nisn,
-            'kelas' => $request->kelas,
-            'jurusan' => $request->jurusan,
+            'nip' => $request->nip,
         ]);
 
         return redirect()->route('students.index')->with('success', 'Data guru berhasil diperbarui.');

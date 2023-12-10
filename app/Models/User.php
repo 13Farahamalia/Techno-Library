@@ -12,13 +12,21 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function borrow() {
+        return $this->hasOne(Borrow::class);
+    }
+
+    public function history() {
+        return $this->hasOne(History::class);
+    }
+
     public function students()
     {
         return $this->hasOne(Student::class);
     }
     public function teachers()
     {
-        return $this->hasOne(Tecaher::class);
+        return $this->hasOne(Teacher::class);
     }
 
     protected $table = 'users';

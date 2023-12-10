@@ -17,7 +17,7 @@
           <h2>Data Guru</h2>
           <p>Data guru pemustaka SMKN 1 Kepanjen</p>
         </div>
-        <a class="btn" href="">
+        <a class="btn" href="{{ route('teachers.index') }}">
           Masuk
         </a>
       </div>
