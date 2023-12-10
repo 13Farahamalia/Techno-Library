@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Teacher;
+use App\Models\User;
 use Faker\Factory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -13,10 +16,12 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // $user = factory(App\User::class)->create();
-        // $user->profile()->create([
-        //     'bio' => 'Ini adalah bio pengguna dummy.',
-        //     // tambahkan kolom lain sesuai kebutuhan
-        // ]);
+        User::create([
+            'id' => '1',
+            'name' => 'admin',
+            'gender' => 'Perempuan',
+            'status' => 'Pustakawan',
+            'password' => Hash::make(1111),
+        ]);
     }
 }

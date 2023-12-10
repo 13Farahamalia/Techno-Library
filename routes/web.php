@@ -33,9 +33,9 @@ Route::group(['middleware' => ['auth', 'status: Pustakawan']], function(){
     Route::get('/pustakawan', [LibrarianController::class, 'index'])->name('pustakawan');
     Route::resource('daftar-buku', ListBooksController::class);
     Route::get('/pustakawan/pemustaka', [LibrarianController::class, 'pemustaka'])->name('pemustaka');
-    Route::resource('teachers', TeachersController::class);
     Route::resource('students', StudentsController::class);
 });
+Route::resource('teachers', TeachersController::class);
 
 Route::resource('books', ListBooksController::class);
 Route::get('/pemustaka', [UsersController::class, 'index'])->name('beranda');
